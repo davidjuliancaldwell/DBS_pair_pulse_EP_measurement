@@ -22,7 +22,7 @@ periodStim = 1 /freqStim; % period of stimulation
 freqSystem = 24414; % frequency of RZ5D 
 lengthTest = numTrials*periodStim; % how long to test for? 
 
-stimTimes = [1:periodStim:lengthTest+1]; % stimulation times
+stimTimes = [1:periodStim:lengthTest+periodStim]; % stimulation times
 
 % convert to samples
 stimTimesSamps = round(stimTimes*freqSystem);
